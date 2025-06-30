@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faspad – Fascinate Packaging and Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <header class="w-full bg-green-800 text-white py-4 shadow">
+      <p class="text-center">Contact us on WhatsApp +94 76 2004 957</p>
+    </header>
+    <!-- Hero Section with Big Logo -->
+    <section
+      class="relative bg-gray-50 min-h-screen flex items-center justify-center px-6 py-24"
+    >
+      <!-- Optional subtle background texture -->
+      <div
+        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] opacity-10"
+      ></div>
+
+      <div
+        class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-12 max-w-6xl mx-auto"
+      >
+        <!-- Big Logo Image -->
+        <div class="flex justify-center md:justify-end">
+          <img
+            src="eco_paper_bags.png"
+            alt="Faspad Logo"
+            class="w-72 h-auto object-contain"
+          />
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-center md:text-left">
+          <h1 class="text-5xl font-extrabold text-green-800 leading-tight">
+            Faspad
+          </h1>
+          <p class="text-2xl text-green-700 mt-4 font-medium">
+            Fascinate Packaging and Design
+          </p>
+          <p class="mt-4 text-gray-600 max-w-md">
+            Eco-friendly, beautiful packaging solutions that inspire — not
+            pollute. Designed for planet lovers and bold brands.
+          </p>
+          <a
+            href="#contact"
+            class="mt-6 inline-block bg-green-600 text-white px-8 py-3 rounded-full shadow hover:bg-green-700 transition"
+          >
+            Let’s Create Together
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animation Utilities -->
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+      }
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+    </style>
+
+    <!-- About Section -->
+    <section class="py-16 px-4 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-6">Our Mission</h2>
+      <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto">
+        At Faspad, we turn recycled and natural materials into sustainable,
+        stylish packaging that tells a story. We're here to help local
+        businesses and our planet thrive — one bag at a time.
+      </p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-gray-50 py-16 px-4">
+      <h2 class="text-3xl font-semibold text-center mb-10">Our Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-xl font-bold text-green-700">Eco Paper Bags</h3>
+          <img src="eco_paper_bags.png" alt="Eco Paper Bags" />
+          <p class="text-gray-600 mt-2">
+            Made from recycled materials with custom prints for your brand.
+          </p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-xl font-bold text-green-700">Reusable Fabric Bags</h3>
+          <img src="reusable_fabric_bags.png" alt="Eco Paper Bags" />
+          <p class="text-gray-600 mt-2">
+            Reusable fabric bags for fruits, vegetables, or groceries — both
+            beautiful and practical.
+          </p>
+        </div>
+        <div class="bg-white p-6 shadow rounded">
+          <h3 class="text-xl font-bold text-green-700">Vendor Kits</h3>
+          <img src="vendor_kits.png" alt="Vendor Kits" />
+          <p class="text-gray-600 mt-2">
+            Starter packs for market sellers with branded bags and stickers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-16 px-4 max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Our Impact</h2>
+      <p class="text-lg text-gray-700 mb-4">
+        Over <span class="text-green-700 font-bold">500+</span> plastic bags
+        replaced
+      </p>
+      <p class="text-gray-600">
+        Every Faspad product saves waste and supports local youth employment.
+        Together, we’re designing a better tomorrow.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-green-700 text-white py-16 px-4">
+      <h2 class="text-3xl font-semibold text-center mb-6">Get in Touch</h2>
+      <p class="text-center mb-6">
+        Ready to go eco? Contact us for orders, collaborations, or custom
+        designs.
+      </p>
+      <div class="max-w-md mx-auto bg-white rounded shadow p-8 text-left">
+        <form
+          action="mailto:hello@faspad.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <div class="mb-4">
+            <label for="name" class="block text-green-700 font-semibold mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 rounded border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-green-700 font-semibold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 rounded border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block text-green-700 font-semibold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="w-full px-4 py-2 rounded border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white font-semibold px-6 py-2 rounded hover:bg-green-800 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-6 text-sm">
+      &copy; 2025 Faspad. All rights reserved.
+    </footer>
+  </body>
+</html>
