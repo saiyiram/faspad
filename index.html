@@ -10,9 +10,9 @@
     <header class="w-full bg-green-800 text-white py-4 shadow">
       <p class="text-center">Contact us on WhatsApp +94 76 2004 957</p>
     </header>
-    <!-- Hero Section with Big Logo -->
+    <!-- Hero Section -->
     <section
-      class="relative bg-gray-50 min-h-screen flex items-center justify-center px-6 py-24"
+      class="relative min-h-screen flex items-center justify-center px-6 py-24 bg-gradient-to-br from-green-50 via-white to-green-100"
     >
       <div
         class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-12 max-w-6xl mx-auto"
@@ -22,30 +22,40 @@
           <img
             src="eco_paper_bags.png"
             alt="Faspad Logo"
-            class="w-72 h-auto object-contain"
+            class="w-80 h-auto object-contain rounded-2xl shadow-2xl animate-fade-in-up delay-100"
           />
         </div>
 
         <!-- Text Content -->
-        <div class="text-center md:text-left">
-          <h1 class="text-5xl font-extrabold text-green-800 leading-tight">
+        <div class="text-center md:text-left animate-fade-in-up delay-200">
+          <h1
+            class="text-6xl font-extrabold text-green-800 leading-tight drop-shadow-lg"
+          >
             Faspad
           </h1>
-          <p class="text-2xl text-green-700 mt-4 font-medium">
+          <p class="text-2xl text-green-700 mt-4 font-semibold">
             Fascinate Packaging and Design
           </p>
-          <p class="mt-4 text-gray-600 max-w-md">
+          <p class="mt-6 text-gray-700 max-w-md mx-auto md:mx-0 text-lg">
             Eco-friendly, beautiful packaging solutions that inspire — not
-            pollute. Designed for planet lovers and bold brands.
+            pollute.<br />
+            Designed for planet lovers and bold brands.
           </p>
           <a
             href="#contact"
-            class="mt-6 inline-block bg-green-600 text-white px-8 py-3 rounded-full shadow hover:bg-green-700 transition"
+            class="mt-8 inline-block bg-green-600 text-white px-10 py-4 rounded-full shadow-xl hover:bg-green-700 transition text-xl font-bold"
           >
             Let’s Create Together
           </a>
         </div>
       </div>
+      <!-- Decorative element -->
+      <div
+        class="absolute top-0 left-0 w-40 h-40 bg-green-100 rounded-full opacity-60 blur-2xl -z-10"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-56 h-56 bg-green-200 rounded-full opacity-40 blur-3xl -z-10"
+      ></div>
     </section>
 
     <!-- Animation Utilities -->
@@ -83,6 +93,14 @@
         stylish packaging that tells a story. We're here to help local
         businesses and our planet thrive — one bag at a time.
       </p>
+      <blockquote
+        class="mt-10 mx-auto max-w-2xl border-l-4 border-green-600 pl-6 italic text-xl text-green-800 bg-green-50 py-6 px-4 shadow-lg"
+      >
+        “Journey of a thousand miles begins with one step.”
+        <span class="block text-green-700 text-base mt-4 text-right"
+          >— Lao Tzu</span
+        >
+      </blockquote>
     </section>
 
     <!-- Products Section -->
@@ -135,54 +153,26 @@
         designs.
       </p>
       <div class="max-w-md mx-auto bg-white rounded shadow p-8 text-left">
-        <form
-          action="mailto:hello@faspad.com"
-          method="POST"
-          enctype="text/plain"
-        >
-          <div class="mb-4">
-            <label for="name" class="block text-green-700 font-semibold mb-2"
-              >Name</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              class="w-full px-4 py-2 rounded border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-green-700 font-semibold mb-2"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="w-full px-4 py-2 rounded border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block text-green-700 font-semibold mb-2"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              class="w-full px-4 py-2 rounded border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-green-600 text-white font-semibold px-6 py-2 rounded hover:bg-green-800 transition"
+        <div class="max-w-md mx-auto bg-white rounded shadow p-8 text-center">
+          <p class="text-green-700 font-semibold mb-4">
+            Chat with us on WhatsApp:
+          </p>
+          <a
+            href="https://wa.me/94762004957"
+            target="_blank"
+            class="inline-flex items-center justify-center bg-green-600 text-white font-semibold px-8 py-3 rounded-full shadow hover:bg-green-800 transition text-lg"
           >
-            Send Message
-          </button>
-        </form>
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.029-.967-.272-.099-.471-.148-.67.15-.198.297-.767.967-.94 1.166-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.363.709.244 1.262.389 1.694.497.712.181 1.36.156 1.872.095.571-.067 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"
+              />
+              <path
+                d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.764.463 3.479 1.341 4.979l-1.409 5.153 5.293-1.389c1.463.801 3.104 1.254 4.772 1.254h.001c5.514 0 9.997-4.483 9.997-9.997 0-2.664-1.037-5.167-2.921-7.051-1.884-1.884-4.387-2.921-7.051-2.921zm0 17.996c-1.522 0-3.012-.396-4.312-1.146l-.308-.179-3.141.824.837-3.07-.2-.316c-.822-1.297-1.257-2.797-1.257-4.309 0-4.411 3.588-7.999 7.999-7.999 2.137 0 4.146.832 5.656 2.344 1.511 1.511 2.344 3.52 2.344 5.656 0 4.411-3.588 7.999-7.999 7.999z"
+              />
+            </svg>
+            Message Us on WhatsApp
+          </a>
+        </div>
       </div>
     </section>
 
