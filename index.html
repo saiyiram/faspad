@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiring & Plumbing Services Waitlist</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 60px auto;
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #555;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        transition: border-color 0.3s;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      button {
+        padding: 12px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #777;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚿 Join the Waitlist</h1>
+      <p>
+        Be the first to access top-tier wiring & plumbing services in your area
+      </p>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input
+          type="text"
+          name="location"
+          placeholder="City or Area"
+          required
+        />
+        <select name="service" required>
+          <option value="">Select Service</option>
+          <option value="wiring">⚡ Electrical Wiring</option>
+          <option value="plumbing">🚰 Plumbing</option>
+          <option value="both">🔧 Both</option>
+          <option value="other">🛠️ Other</option>
+        </select>
+        <textarea
+          name="feedback"
+          rows="4"
+          placeholder="What's your biggest frustration with these services?"
+        ></textarea>
+        <button type="submit">Join the Waitlist</button>
+      </form>
+      <div class="footer">
+        ✅ We’ll notify you as soon as we launch in your area.
+      </div>
+    </div>
+  </body>
+</html>
